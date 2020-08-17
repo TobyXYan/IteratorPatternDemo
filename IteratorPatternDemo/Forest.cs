@@ -7,11 +7,11 @@ namespace IteratorPatternDemo
     class Forest : Iterable<Tree>
     {
         private Iterator<Tree> _iterator;
-        private IList<Tree> _treeCollection;
+        private IList<Tree>    _treeCollection;
         public Forest()
         {
             _treeCollection = new List<Tree>();
-            _iterator = new TreeIterator(this);
+            _iterator       = new TreeIterator(this);
         }
         public Iterator<Tree> GetIterator()
         {
